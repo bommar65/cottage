@@ -1,20 +1,21 @@
 
 body {
   background-color: lightgray;
-  margin: 20px;
   font-family: sans-serif;
+  margin: 0%;
 }
-hr {
+#thingspic {
+  padding-top: 100px;
+  text-align: center;
   display: block;
-  margin-top: 5em;
-  margin-bottom: 0.3em;
-  margin-left: auto;
-  margin-right: auto;
-  border-style: inset;
-  border-width: 1px;
+  display: block;
+  margin: 0 auto;
+  max-height: 100%;
+  max-width: 100%;
 }
 #bold {
   font-weight: bold;
+  letter-spacing: 3px;
 }
 p {
   margin: 20px;
@@ -23,7 +24,7 @@ p {
   padding-top: 10%;
 }
 nav {
-  margin: auto;
+  margin: 0;
   background-color: lightgray;
   text-align: center;
 }
@@ -40,8 +41,8 @@ nav li {
   position: relative;
 }
 #outside{
-  margin: 150px;
-  
+  margin-top: 150px;
+  margin-left: 150px;
   height: 140%;
   width: 140%;
 }
@@ -50,6 +51,7 @@ nav a{
   text-decoration: none;
   text-transform: uppercase;
   font-size: 20px;
+
 }
 nav a:hover {
   color: #000;
@@ -70,6 +72,65 @@ nav a::before{
 }
 nav a:hover::before {
   width: 100%
+}
+#thingstodo{
+  margin-top: 180px;
+  display: flex;
+  justify-content: center;
+}
+.thingslist{
+  justify-content: center;
+  display: flex;
+  margin-top: 10px;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  font-size: 20px;
+  padding-left: 40px;
+}
+.forest{
+  max-width: 1200px;
+  max-height: 1200px;
+  padding: 15px;
+}
+h2{
+  text-align: center;
+  padding-top: 20px;
+}
+
+#navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  height: 130px;
+  background-color: grey !important;
+  z-index: 1;
+}
+
+/* Navbar links */
+#navbar a {
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
 }
 
 .container {
@@ -97,7 +158,7 @@ nav a:hover::before {
   position: relative;
   margin: auto;
   border: 20px;
-  padding-top: 150px;
+  padding-top: 50px;
 }
 
 /* Hide the images by default */
